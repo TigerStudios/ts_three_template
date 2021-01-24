@@ -5,9 +5,10 @@ Template for Three.js study
 ## if not installed install parcel and sass
 
 npm install -g parcel-bundler
+
 npm install -g sass
 
-## intsall dependancies
+## intsall dependencies
 
 npm install
 
