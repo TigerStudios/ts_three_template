@@ -1,13 +1,13 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GUI } from 'three/examples/jsm/libs/dat.gui.module.js';
-import { JTS as _ } from "../vendor/JTS/jts.service";
-import vertexShader from "./shaders/vertex.glsl";
-import fragmentShader from "./shaders/fragment.glsl";
+import { JTS as _ } from '../vendor/JTS/jts.service';
+import vertexShader from './shaders/vertex.glsl';
+import fragmentShader from './shaders/fragment.glsl';
 
 export class Paint{
 
-    static TIME: number = 0.05;
+    static TIME: number = 0.01;
     static INCREASE_VALUE: number = 0.01;
 
     //THREE
@@ -47,7 +47,7 @@ export class Paint{
         //Renderer
         this.setRenderer();
 
-        //Contrrols
+        //Controls
         this.setControls();
 
         //Gui
@@ -78,6 +78,7 @@ export class Paint{
             this.time += Paint.TIME;
             this.increaseValue += Paint.INCREASE_VALUE;
 
+            this.material.uniforms.time.value = this.time;
             this.material.uniforms.increaseValue.value = this.increaseValue;
 
             requestAnimationFrame(() => this.render());
@@ -126,20 +127,20 @@ export class Paint{
     setModel(){
 
         let uniforms = {
-            increaseValue : { value : 0.}
+            increaseValue : { value : 0.},
+            time  : { value : 0.}
         };
 
-        this.geometry = new THREE.SphereBufferGeometry(30,32,16);
+        this.geometry = new THREE.PlaneBufferGeometry(10,10,10,10);
         this.material = new THREE.ShaderMaterial({
            vertexShader,
            fragmentShader,
            uniforms,
-           wireframe : true
+           side : THREE.DoubleSide
+           //wireframe : true
         });
 
         this.mesh = new THREE.Mesh(this.geometry,this.material);
-        this.mesh.rotation.y = this.toRadians(120);
-        this.mesh.rotation.z = this.toRadians(60);
 
     }
 
@@ -168,7 +169,7 @@ export class Paint{
         this.scene = new THREE.Scene();
 
         this.camera = new THREE.PerspectiveCamera(50,window.innerWidth / window.innerHeight,0.01,10000);
-        this.camera.position.set(0,0,100);
+        this.camera.position.set(0,0,30);
         this.camera.lookAt(new THREE.Vector3());
 
     }
