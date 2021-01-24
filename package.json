@@ -1,0 +1,24 @@
+{
+  "name": "ts_three_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run sasswatch\" \"npm run parcel\" ",
+    "sasswatch": "sass --watch styles/scss:styles/css",
+    "parcel": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.124.0"
+  },
+  "devDependencies": {
+    "concurrently": "5.3.0",
+    "glslify-bundle": "^5.1.1",
+    "glslify-deps": "^1.3.2",
+    "typescript": "^4.1.3"
+  }
+}

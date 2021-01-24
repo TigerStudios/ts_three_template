@@ -1,0 +1,270 @@
+/****************************
+GENERAL RULES
+ */
+body {
+  margin:0;
+  padding:0;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+[class*="row"]::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+
+img , input , table{
+  display:block;
+}
+
+/*
+END GENERAL RULES
+****************************/
+
+
+
+
+/****************************
+RESPONSIVE COLUMNS
+ */
+$media_val : (0px 415px 737px 813px 1025px 1981px);
+
+$class_tag : (pp pl px tab dn dl);
+
+$width_val : (4.16% 8.33% 12.5% 16.66% 20.83% 25% 29.17% 33.33% 37.5% 41.66%
+45.83% 50% 54.17% 58.33% 62.50% 66.66% 70.83% 75% 79.17% 83.33%
+87.5% 91.66% 95.83% 100%);
+
+$column_tag : (h 1 1h 2 2h 3 3h 4 4h 5
+5h 6 6h 7 7h 8 8h 9 9h 10
+10h 11 11h 12);
+
+@for $i from 1 through length($media_val){
+  @media (min-width: #{nth($media_val,$i)}){
+    @for $l from 1 through length($width_val){
+      .col-#{nth($class_tag,$i)}-#{nth($column_tag,$l)}{
+        width:nth($width_val,$l);
+      }
+    }
+  }
+}
+
+[class*='col-'] , [class*="ts-grid-fixed"]{
+  float:left;
+  position:relative;
+  display:block;
+  overflow:hidden;
+}
+
+.ts-grid-rest{
+  overflow:auto hidden!important;
+  float:none!important;
+}
+.ts-grid-right{
+  float:right!important;
+}
+
+@media(min-width: 813px) and (max-width:1024px)
+{
+  .ts-hide-tab{
+    width:0;
+    height:0;
+    border:none;
+    padding:0;
+    visibility:collapse;
+    display:none;
+  }
+}
+
+@media(min-width: 737px) and (max-width:812px)
+{
+  .ts-hide-px{
+    width:0;
+    height:0;
+    border:none;
+    padding:0;
+    visibility:collapse;
+    display:none;
+  }
+}
+
+@media(min-width: 415px) and (max-width:736px)
+{
+  .ts-hide-pl{
+    width:0;
+    height:0;
+    border:none;
+    visibility:collapse;
+    padding:0;
+    display:none;
+  }
+}
+@media(min-width: 0px) and (max-width:414px)
+{
+  .ts-hide-pp{
+    width:0;
+    height:0;
+    border:none;
+    visibility:collapse;
+    padding:0;
+    display:none;
+  }
+}
+
+/*
+END RESPONSIVE COLUMNS
+****************************/
+
+
+/****************************
+BACKGROUND BORDER TEXT COLORS
+ */
+$colors_name : (red pink purple deep-purple
+indigo blue light-blue cyan
+aqua leal green light-green
+lime khaki yellow amber
+orange deep-orange blue-gray brown
+gray light-gray white black
+cream sea cake orange-sea
+writing-blue coral-blue tangerine);
+
+$colors_val  : ( #f44336 #e91e63 #9c27b0 #673ab7
+#3f51b5 #2196f3 #87ceeb #00bcd4
+#00ffff #009688 #4caf50 #8bc34a
+#cddc39 #f0e68c #ffeb3b #ffc107
+#ff9800 #ff5722 #607d8b #795548
+#9e9e9e #f1f1f1 #fff #000
+#f4d77a #72b4e1 #ff00d8 #fbc34f
+#3e8988 #0eb7da #fba334 );
+
+@for $i from 1 through length($colors_name){
+  .ts-bg-#{nth($colors_name,$i)}{
+    background-color: nth($colors_val,$i) !important;
+  }
+  .ts-br-#{nth($colors_name,$i)}{
+    border-color: nth($colors_val,$i) !important;
+  }
+  .ts-tx-#{nth($colors_name,$i)}{
+    color: nth($colors_val,$i)!important;
+  }
+}
+
+/*
+END BACKGROUND BORDER TEXT COLORS
+****************************/
+
+
+
+
+/****************************
+FONTS
+ */
+$fonts-url :(28dl aerob go3 osaka
+commodore-64 diskoteque Gribal barbie
+acens monkeyfury rollette theQ
+deadman Rounded_Elegance montserrat pixellcd);
+
+$fonts-family :(t8-days-later aerob gang-3 osaka
+c-64 diskoteque gribal barbie
+acens monkeyfury rollette theQ
+deadman elegance montserrat pixel-lcd);
+
+$fonts-name :(28-dl aero-brasil gang-3 osaka
+commodore-64 diskoteque gribal barbie
+acens monkey-fury rollette theQ
+deadman elegance montserrat pixel-lcd);
+
+@for $i from 1 through length($fonts-url){
+  @font-face{
+    font-family:nth($fonts-family,$i);
+    src:url("../fonts/#{nth($fonts-url,$i)}.ttf");
+  }
+  @font-face{
+    font-family:nth($fonts-family,$i);
+    src:url("../fonts/#{nth($fonts-url,$i)}.eot");
+  }
+  .ts-font-#{nth($fonts-name,$i)}{
+    font-family:nth($fonts-family,$i);
+  }
+}
+
+.ts-font-helvetica{
+  font-family:Helvetica;
+}
+
+.ts-font-verdana{
+  font-family:Verdana;
+}
+
+/*
+END FONTS
+****************************/
+
+
+
+
+
+/****************************
+PADDING
+ */
+$padding_val :(5 10 15 20 25 30 35 40 45 50);
+
+@for $i from 1 through length($padding_val){
+  .ts-tpd-#{nth($padding_val,$i)}{
+    padding: #{nth($padding_val,$i)}px;
+  }
+  .ts-hpd-#{nth($padding_val,$i)}{
+    padding-left: #{nth($padding_val,$i)}px;
+    padding-right: #{nth($padding_val,$i)}px;
+  }
+  .ts-vpd-#{nth($padding_val,$i)}{
+    padding-top: #{nth($padding_val,$i)}px;
+    padding-bottom: #{nth($padding_val,$i)}px;
+  }
+}
+
+/*
+END PADDING
+****************************/
+
+
+
+
+/****************************
+CENTER
+ */
+img.center-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.self-centered{
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*
+END CENTER
+****************************/
+
+
+
+
+/****************************
+VISIBILITY
+ */
+.overflow-visible{
+  overflow: visible;
+}
+
+.hidden-element{
+  display: none;
+}
+/*
+END VISIBILITY
+****************************/
+

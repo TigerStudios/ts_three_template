@@ -1,0 +1,1793 @@
+﻿{
+
+  "animations": [
+
+    {
+      "name"          : "stripes_in_out",
+      "tiles"         : [ 3, 6 ],
+      "columns"       : [ 1, 1 ],
+      "rows"          : [ 3, 6 ],
+      "overflow"      : "visible",
+      "double"        : true,
+      "back_visible"  : false,
+      "dispose_delay" : [ 2300, 3200 ],
+
+      "start_pos" : [
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "100%", "100%", "100%", "-100%", "-100%", "-100%" ],
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "100%", "100%", "100%", "100%", "100%", "100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%" ]
+      ],
+      "stop_pos": [
+        [ "-100%", "-100%", "-100%", "0%", "0%", "0%", "-100%", "-100%", "-100%", "0%", "0%", "0%" ],
+        [ "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "0%", "0%", "0%", "0%", "0%", "0%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "0%", "0%", "0%", "0%", "0%", "0%" ]
+      ],
+
+      "start_opacity": [
+        [ 1, 1, 1, 0, 0, 0 ],
+        [ 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0 ]
+      ],
+      "stop_opacity": [
+        [ 0, 0, 0, 1, 1, 1 ],
+        [ 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1 ]
+      ],
+
+      "transition": [
+        [
+          "left 1.5s ease-out 0s , opacity 1.5s ease-out 0s , top 1.5s ease-out 0s",
+          "left 1.5s ease-out 0.3s , opacity 1.5s ease-out 0.3s , top 1.5s ease-out 0.3s",
+          "left 1.5s ease-out 0.6s , opacity 1.5s ease-out 0.6s , top 1.5s ease-out 0.6s"
+        ],
+        [
+          "left 1.5s ease-out 0s , opacity 1.5s ease-out 0s , top 1.5s ease-out 0s",
+          "left 1.5s ease-out 0.3s , opacity 1.5s ease-out 0.3s , top 1.5s ease-out 0.3s",
+          "left 1.5s ease-out 0.6s , opacity 1.5s ease-out 0.6s , top 1.5s ease-out 0.6s",
+          "left 1.5s ease-out 0.9s , opacity 1.5s ease-out 0.9s , top 1.5s ease-out 0.9s",
+          "left 1.5s ease-out 1.2s , opacity 1.5s ease-out 1.2s , top 1.5s ease-out 1.2s",
+          "left 1.5s ease-out 1.5s , opacity 1.5s ease-out 1.5s , top 1.5s ease-out 1.5s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "diagonal_in",
+      "tiles"         : [ 9, 16 ],
+      "columns"       : [ 3, 4 ],
+      "rows"          : [ 3, 4 ],
+      "overflow"      : "hidden",
+      "double"        : false,
+      "back_visible"  : true,
+      "dispose_delay" : [ 1300, 1300 ],
+
+      "start_pos": [
+        [ "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%" ],
+        [ "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%" ]
+      ],
+      "stop_pos": [
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ],
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ]
+      ],
+
+      "transition": [
+        [
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s"
+
+        ],
+        [
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s",
+          "left 1s linear 0s , top 1s linear 0s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "vertical_in",
+      "tiles"         : [ 4, 12 ],
+      "columns"       : [ 4, 12 ],
+      "rows"          : [ 1, 1 ],
+      "overflow"      : "hidden",
+      "double"        : false,
+      "back_visible"  : true,
+      "dispose_delay" : [ 1800, 1800 ],
+
+      "start_pos": [
+        [ "0%", "0%", "0%", "0%", "100%", "-100%", "100%", "-100%" ],
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "100%", "-100%", "100%", "-100%", "100%", "-100%", "100%", "-100%", "100%", "-100%", "100%", "-100%" ]
+      ],
+      "stop_pos": [
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ],
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ]
+      ],
+
+      "transition": [
+        [
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s"
+        ],
+        [
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s",
+          "top 1.5s ease-out 0s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "wave_in",
+      "tiles"         : [ 10, 35 ],
+      "columns"       : [ 10, 35 ],
+      "rows"          : [ 1, 1 ],
+      "overflow"      : "hidden",
+      "double"        : false,
+      "back_visible"  : true,
+      "dispose_delay" : [ 1700, 4200 ],
+
+      "start_pos": [
+        [
+         "-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ],
+        [
+        "-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%","-100%",
+        "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ]
+      ],
+      "stop_pos": [
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ],
+        [
+         "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ]
+      ],
+      
+      "transition": [
+        [
+          "left 0.5s ease-out 0s",
+          "left 0.5s ease-out 0.1s",
+          "left 0.5s ease-out 0.2s",
+          "left 0.5s ease-out 0.3s",
+          "left 0.5s ease-out 0.4s",
+          "left 0.5s ease-out 0.5s",
+          "left 0.5s ease-out 0.6s",
+          "left 0.5s ease-out 0.7s",
+          "left 0.5s ease-out 0.8s",
+          "left 0.5s ease-out 0.9s"
+        ],
+        [
+          "left 0.5s ease-out 0s",
+          "left 0.5s ease-out 0.1s",
+          "left 0.5s ease-out 0.2s",
+          "left 0.5s ease-out 0.3s",
+          "left 0.5s ease-out 0.4s",
+          "left 0.5s ease-out 0.5s",
+          "left 0.5s ease-out 0.6s",
+          "left 0.5s ease-out 0.7s",
+          "left 0.5s ease-out 0.8s",
+          "left 0.5s ease-out 0.9s",
+          "left 0.5s ease-out 1s",
+          "left 0.5s ease-out 1.1s",
+          "left 0.5s ease-out 1.2s",
+          "left 0.5s ease-out 1.3s",
+          "left 0.5s ease-out 1.4s",
+          "left 0.5s ease-out 1.5s",
+          "left 0.5s ease-out 1.6s",
+          "left 0.5s ease-out 1.7s",
+          "left 0.5s ease-out 1.8s",
+          "left 0.5s ease-out 1.9s",
+          "left 0.5s ease-out 2s",
+          "left 0.5s ease-out 2.1s",
+          "left 0.5s ease-out 2.2s",
+          "left 0.5s ease-out 2.3s",
+          "left 0.5s ease-out 2.4s",
+          "left 0.5s ease-out 2.5s",
+          "left 0.5s ease-out 2.6s",
+          "left 0.5s ease-out 2.7s",
+          "left 0.5s ease-out 2.8s",
+          "left 0.5s ease-out 2.9s",
+          "left 0.5s ease-out 3s",
+          "left 0.5s ease-out 3.1s",
+          "left 0.5s ease-out 3.2s",
+          "left 0.5s ease-out 3.3s",
+          "left 0.5s ease-out 3.4s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "twist_in",
+      "tiles"         : [ 5, 15 ],
+      "columns"       : [ 1, 1 ],
+      "rows"          : [ 5, 15 ],
+      "overflow"      : "visible",
+      "double"        : true,
+      "back_visible"  : false,
+      "dispose_delay" : [ 1700, 2700 ],
+      
+      "start_opacity" : [
+        [ 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 ],
+        [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+      ],
+      "stop_opacity": [
+        [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ],
+        [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+      ],
+      
+      "start_transform": [
+        [
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)"
+        ],
+        [
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)",
+          "rotate3d(0, -1, -1, 180deg)"
+        ]
+      ],
+      "stop_transform": [
+        [
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)"
+        ],
+        [
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 1, 1, 180deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)",
+          "rotate3d(0, 0, 0, 0deg)"
+        ]
+      ],
+      
+      "transition": [
+        [
+          "opacity 1s ease-out 0s , transform 1s ease-out 0s",
+          "opacity 1s ease-out 0.1s , transform 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.3s , transform 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.4s , transform 1s ease-out 0.4s"
+        ],
+        [
+          "opacity 1s ease-out 0s , transform 1s ease-out 0s",
+          "opacity 1s ease-out 0.1s , transform 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.3s , transform 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.4s , transform 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.5s , transform 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.6s , transform 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.7s , transform 1s ease-out 0.7s",
+          "opacity 1s ease-out 0.8s , transform 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.9s , transform 1s ease-out 0.9s",
+          "opacity 1s ease-out 1s , transform 1s ease-out 1s",
+          "opacity 1s ease-out 1.1s , transform 1s ease-out 1.1s",
+          "opacity 1s ease-out 1.2s , transform 1s ease-out 1.2s",
+          "opacity 1s ease-out 1.3s , transform 1s ease-out 1.3s",
+          "opacity 1s ease-out 1.4s , transform 1s ease-out 1.4s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "pixels_in",
+      "tiles"         : [ 5, 15 ],
+      "columns"       : [ 1, 1 ],
+      "rows"          : [ 5, 15 ],
+      "overflow"      : "visible",
+      "double"        : true,
+      "back_visible"  : false,
+      "dispose_delay" : [ 1700, 2700 ],
+      
+      "start_opacity": [
+        [ 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 ],
+        [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+      ],
+      "stop_opacity": [
+        [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ],
+        [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+      ],
+      
+      "transition": [
+        [
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.4s"
+        ],
+        [
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.7s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.9s",
+          "opacity 1s ease-out 1s",
+          "opacity 1s ease-out 1.1s",
+          "opacity 1s ease-out 1.2s",
+          "opacity 1s ease-out 1.3s",
+          "opacity 1s ease-out 1.4s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "fly_in",
+      "tiles"         : [ 5, 15 ],
+      "columns"       : [ 5, 15 ],
+      "rows"          : [ 1, 1 ],
+      "overflow"      : "visible",
+      "double"        : false,
+      "back_visible"  : true,
+      "dispose_delay" : [ 2000, 4000 ],
+      
+      "start_pos": [
+        [ "-100%", "-200%", "-300%", "-400%", "-1000%", "0%", "0%", "0%", "0%", "0%" ],
+        [
+         "-100%","-200%","-300%","-400%","-500%","-600%","-700%","-800%","-900%","-1000%","-1100%","-1200%","-1300%","-1400%","-2000%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ]
+      ],
+      "stop_pos": [
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ],
+        [
+        "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ]
+      ],
+      
+      "start_transform": [
+        [
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)"
+        ],
+        [
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)",
+          "rotateY(-760deg)"
+        ]
+      ],
+      
+      "stop_transform": [
+        [
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)"
+        ],
+        [
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)"
+        ]
+      ],
+      
+      "transition": [
+        [
+          "left 1s ease-out 0s , transform 1s ease-out 0s",
+          "left 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "left 1s ease-out 0.4s , transform 1s ease-out 0.4s",
+          "left 1s ease-out 0.6s , transform 1s ease-out 0.6s",
+          "left 1s ease-out 0.8s , transform 1s ease-out 0.8s"
+        ],
+        [
+          "left 1s ease-out 0s , transform 1s ease-out 0s",
+          "left 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "left 1s ease-out 0.4s , transform 1s ease-out 0.4s",
+          "left 1s ease-out 0.6s , transform 1s ease-out 0.6s",
+          "left 1s ease-out 0.8s , transform 1s ease-out 0.8s",
+          "left 1s ease-out 1s , transform 1s ease-out 1s",
+          "left 1s ease-out 1.2s , transform 1s ease-out 1.2s",
+          "left 1s ease-out 1.4s , transform 1s ease-out 1.4s",
+          "left 1s ease-out 1.6s , transform 1s ease-out 1.6s",
+          "left 1s ease-out 1.8s , transform 1s ease-out 1.8s",
+          "left 1s ease-out 2s , transform 1s ease-out 2s",
+          "left 1s ease-out 2.2s , transform 1s ease-out 2.2s",
+          "left 1s ease-out 2.4s , transform 1s ease-out 2.4s",
+          "left 1s ease-out 2.6s , transform 1s ease-out 2.6s",
+          "left 1s ease-out 2.8s , transform 1s ease-out 2.8s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "stripes_in",
+      "tiles"         : [ 5, 15 ],
+      "columns"       : [ 1, 1 ],
+      "rows"          : [ 5, 15 ],
+      "overflow"      : "hidden",
+      "double"        : false,
+      "back_visible"  : true,
+      "dispose_delay" : [ 1800, 2200 ],
+      
+      "start_pos": [
+        [ "-100%", "100%", "-100%", "100%", "-100%", "0%", "0%", "0%", "0%", "0%" ],
+        [
+         "-100%","100%","-100%","100%","-100%","100%","-100%","100%","-100%","100%","-100%","100%","-100%","100%","-100%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ]
+      ],
+      "stop_pos": [
+        [ "0%", "0%", "0%", "0%", "0%" ],
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ]
+      ],
+      
+      "transition": [
+        [
+          "left 1s ease-out 0.5s",
+          "left 1s ease-out 0.1s",
+          "left 1s ease-out 0.3s",
+          "left 1s ease-out 0.6s",
+          "left 1s ease-out 0s" 
+        ],
+        [
+          "left 1s ease-out 0.5s",
+          "left 1s ease-out 0.3s",
+          "left 1s ease-out 0.1s",
+          "left 1s ease-out 0.2s",
+          "left 1s ease-out 0s",
+          "left 1s ease-out 0.1s",
+          "left 1s ease-out 0.8s",
+          "left 1s ease-out 0.3s",
+          "left 1s ease-out 0.5s",
+          "left 1s ease-out 0.1s",
+          "left 1s ease-out 0s",
+          "left 1s ease-out 1s",
+          "left 1s ease-out 0.3s",
+          "left 1s ease-out 0.4s",
+          "left 1s ease-out 0s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "rotation_in",
+      "tiles"         : [ 9, 16 ],
+      "columns"       : [ 3, 4 ],
+      "rows"          : [ 3, 4 ],
+      "overflow"      : "visible",
+      "double"        : false,
+      "back_visible"  : true,
+      "dispose_delay" : [ 1600, 1800 ],
+      
+      "start_pos": [
+        [ "200%","-200%","200%","-200%","200%","-200%","200%","-200%","200%","350%","350%","350%","350%","350%","350%","350%","350%","350%"],
+        [ "200%","-200%","200%","-200%","200%","-200%","200%","-200%","200%","-200%","200%","-200%","200%","-200%","200%","-200%" ,        
+          "500%","500%","500%","500%","500%","500%","500%","500%","500%", "500%","500%","500%","500%","500%","500%","500%"]
+      ],
+      "stop_pos": [
+        [ "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%" ],
+        [
+          "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%",
+          "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ]
+      ],
+      
+      "start_transform": [
+        [
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)", 
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)"
+        ],
+        [
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)",
+          "rotate3d(1,1,1,180deg)"
+        ]
+      ],
+      "stop_transform": [
+        [
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)"
+        ],
+        [
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)",
+          "rotate3d(1,1,1,0deg)"
+        ]
+      ],
+      
+      "transition": [
+        [
+          "left 1s ease-out 0s , top 1s ease-out 0s , transform 1s ease-out 0s",
+          "left 1s ease-out 0s , top 1s ease-out 0s , transform 1s ease-out 0s",
+          "left 1s ease-out 0s , top 1s ease-out 0s , transform 1s ease-out 0s",
+          "left 1s ease-out 0.2s , top 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "left 1s ease-out 0.2s , top 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "left 1s ease-out 0.2s , top 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "left 1s ease-out 0.4s , top 1s ease-out 0.4s , transform 1s ease-out 0.4s",
+          "left 1s ease-out 0.4s , top 1s ease-out 0.4s , transform 1s ease-out 0.4s",
+          "left 1s ease-out 0.4s , top 1s ease-out 0.4s , transform 1s ease-out 0.4s"
+        ],
+        [
+          "left 1s ease-out 0s , top 1s ease-out 0s , transform 1s ease-out 0s",
+          "left 1s ease-out 0s , top 1s ease-out 0s , transform 1s ease-out 0s",
+          "left 1s ease-out 0s , top 1s ease-out 0s , transform 1s ease-out 0s",
+          "left 1s ease-out 0s , top 1s ease-out 0s , transform 1s ease-out 0s",
+          "left 1s ease-out 0.2s , top 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "left 1s ease-out 0.2s , top 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "left 1s ease-out 0.2s , top 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "left 1s ease-out 0.2s , top 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "left 1s ease-out 0.4s , top 1s ease-out 0.4s , transform 1s ease-out 0.4s",
+          "left 1s ease-out 0.4s , top 1s ease-out 0.4s , transform 1s ease-out 0.4s",
+          "left 1s ease-out 0.4s , top 1s ease-out 0.4s , transform 1s ease-out 0.4s",
+          "left 1s ease-out 0.4s , top 1s ease-out 0.4s , transform 1s ease-out 0.4s",
+          "left 1s ease-out 0.6s , top 1s ease-out 0.6s , transform 1s ease-out 0.6s",
+          "left 1s ease-out 0.6s , top 1s ease-out 0.6s , transform 1s ease-out 0.6s",
+          "left 1s ease-out 0.6s , top 1s ease-out 0.6s , transform 1s ease-out 0.6s",
+          "left 1s ease-out 0.6s , top 1s ease-out 0.6s , transform 1s ease-out 0.6s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "tile_show",
+      "tiles"         : [ 9, 16 ],
+      "columns"       : [ 3, 4 ],
+      "rows"          : [ 3, 4 ],
+      "overflow"      : "visible",
+      "double"        : true,
+      "back_visible"  : true,
+      "dispose_delay" : [ 3000, 3400 ],
+      
+      "start_pos": [
+        [
+          "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%",
+          "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ],
+        [
+          "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%",
+          "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ]
+      ],
+      "stop_pos": [
+        [
+         "280%","280%","280%","280%","280%","280%","280%","280%","280%","0%","0%","0%","0%","0%","0%","0%","0%","0%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ],
+        [
+         "280%","280%","280%","280%","280%","280%","280%","280%","280%","280%","280%","280%","280%","280%","280%","280%",
+         "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%",
+         "-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%","-280%",
+         "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ]
+      ],
+     
+       "strat_opacity": [
+        [
+          1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+        ],
+        [
+          1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+        ]
+      ],
+      "stop_opacity": [
+        [
+         0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+        ],
+        [
+          0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+        ]
+      ],
+      
+      "start_transform": [
+        [
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)"
+        ],
+        [
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)"
+        ]
+      ],
+      "stop_transform": [
+        [
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)"
+        ],
+        [
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)"
+        ]
+      ],
+      
+      "transition": [
+        [
+          "left 2s ease-out 0s , top 2s ease-out 0s , transform 2s ease-out 0s , opacity 2s ease-out 0s",
+          "left 2s ease-out 0s , top 2s ease-out 0s , transform 2s ease-out 0s , opacity 2s ease-out 0s",
+          "left 2s ease-out 0s , top 2s ease-out 0s , transform 2s ease-out 0s , opacity 2s ease-out 0s",
+          "left 2s ease-out 0.4s , top 2s ease-out 0.4s , transform 2s ease-out 0.4s , opacity 2s ease-out 0.4s",
+          "left 2s ease-out 0.4s , top 2s ease-out 0.4s , transform 2s ease-out 0.4s , opacity 2s ease-out 0.4s",
+          "left 2s ease-out 0.4s , top 2s ease-out 0.4s , transform 2s ease-out 0.4s , opacity 2s ease-out 0.4s",
+          "left 2s ease-out 0.8s , top 2s ease-out 0.8s , transform 2s ease-out 0.8s , opacity 2s ease-out 0.8s",
+          "left 2s ease-out 0.8s , top 2s ease-out 0.8s , transform 2s ease-out 0.8s , opacity 2s ease-out 0.8s",
+          "left 2s ease-out 0.8s , top 2s ease-out 0.8s , transform 2s ease-out 0.8s , opacity 2s ease-out 0.8s"
+        ],
+        [
+          "left 2s ease-out 0s , top 2s ease-out 0s , transform 2s ease-out 0s , opacity 2s ease-out 0s",
+          "left 2s ease-out 0s , top 2s ease-out 0s , transform 2s ease-out 0s , opacity 2s ease-out 0s",
+          "left 2s ease-out 0s , top 2s ease-out 0s , transform 2s ease-out 0s , opacity 2s ease-out 0s",
+          "left 2s ease-out 0s , top 2s ease-out 0s , transform 2s ease-out 0s , opacity 2s ease-out 0s",
+          "left 2s ease-out 0.4s , top 2s ease-out 0.4s , transform 2s ease-out 0.4s , opacity 2s ease-out 0.4s",
+          "left 2s ease-out 0.4s , top 2s ease-out 0.4s , transform 2s ease-out 0.4s , opacity 2s ease-out 0.4s",
+          "left 2s ease-out 0.4s , top 2s ease-out 0.4s , transform 2s ease-out 0.4s , opacity 2s ease-out 0.4s",
+          "left 2s ease-out 0.4s , top 2s ease-out 0.4s , transform 2s ease-out 0.4s , opacity 2s ease-out 0.4s",
+          "left 2s ease-out 0.8s , top 2s ease-out 0.8s , transform 2s ease-out 0.8s , opacity 2s ease-out 0.8s",
+          "left 2s ease-out 0.8s , top 2s ease-out 0.8s , transform 2s ease-out 0.8s , opacity 2s ease-out 0.8s",
+          "left 2s ease-out 0.8s , top 2s ease-out 0.8s , transform 2s ease-out 0.8s , opacity 2s ease-out 0.8s",
+          "left 2s ease-out 0.8s , top 2s ease-out 0.8s , transform 2s ease-out 0.8s , opacity 2s ease-out 0.8s",
+          "left 2s ease-out 1.2s , top 2s ease-out 1.2s , transform 2s ease-out 1.2s , opacity 2s ease-out 1.2s",
+          "left 2s ease-out 1.2s , top 2s ease-out 1.2s , transform 2s ease-out 1.2s , opacity 2s ease-out 1.2s",
+          "left 2s ease-out 1.2s , top 2s ease-out 1.2s , transform 2s ease-out 1.2s , opacity 2s ease-out 1.2s",
+          "left 2s ease-out 1.2s , top 2s ease-out 1.2s , transform 2s ease-out 1.2s , opacity 2s ease-out 1.2s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "random_twist",
+      "tiles"         : [ 5, 10 ],
+      "columns"       : [ 1, 1 ],
+      "rows"          : [ 5, 10 ],
+      "overflow"      : "visible",
+      "double"        : true,
+      "back_visible"  : false,
+      "dispose_delay" : [ 1800, 2200 ],
+      
+      "start_opacity": [
+        [ 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 ],
+        [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+      ],
+      "stop_opacity": [
+        [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ],
+        [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+      ],
+      
+      "start_transform": [
+        [
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)"
+        ],
+        [
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)"
+        ]
+      ],
+      "stop_transform": [
+        [
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)"
+        ],
+        [
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(-180deg)",
+          "rotateY(180deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)",
+          "rotateY(0deg)"
+        ]
+      ],
+      
+      "transition": [
+        [
+          "opacity 1s ease-out 0.3s , transform 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.5s , transform 1s ease-out 0.5s",
+          "opacity 1s ease-out 0s , transform 1s ease-out 0s",
+          "opacity 1s ease-out 0.6s , transform 1s ease-out 0.6s"
+        ],
+        [
+          "opacity 1s ease-out 0.3s , transform 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.1s , transform 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.5s , transform 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.3s , transform 1s ease-out 0.3s",
+          "opacity 1s ease-out 0s , transform 1s ease-out 0s",
+          "opacity 1s ease-out 0.4s , transform 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.6s , transform 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.3s , transform 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.8s , transform 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.2s , transform 1s ease-out 0.2s",
+          "opacity 1s ease-out 1s , transform 1s ease-out 1s",
+          "opacity 1s ease-out 0.5s , transform 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.6s , transform 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.3s , transform 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.1s , transform 1s ease-out 0.1s"
+        ]
+      ]
+    },
+
+    {
+      "name"         : "left_right_slide",
+      "tiles"        : [ 5, 12 ],
+      "columns"      : [ 5, 12 ],
+      "rows"         : [ 1, 1 ],
+      "overflow"     : "hidden",
+      "double"       : false,
+      "back_visible" : true,
+      "dispose_delay" : [ 1700, 2400 ],
+      
+      "start_pos": [
+        [ "101%", "-101%", "101%", "-101%", "101%", "0%", "0%", "0%", "0%", "0%" ],
+        [ "101%", "-101%", "101%", "-101%", "101%", "-101%", "101%", "-101%", "101%", "-101%", "101%", "-101%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ]
+      ],
+      "stop_pos": [
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ],
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ]
+      ],
+      
+      "transition": [
+        [
+          "left 1s ease-out 0s",
+          "left 1s ease-out 0.1s",
+          "left 1s ease-out 0.2s",
+          "left 1s ease-out 0.3s",
+          "left 1s ease-out 0.4s"
+        ],
+        [
+          "left 1s ease-out 0s",
+          "left 1s ease-out 0.1s",
+          "left 1s ease-out 0.2s",
+          "left 1s ease-out 0.3s",
+          "left 1s ease-out 0.4s",
+          "left 1s ease-out 0.5s",
+          "left 1s ease-out 0.6s",
+          "left 1s ease-out 0.7s",
+          "left 1s ease-out 0.8s",
+          "left 1s ease-out 0.9s",
+          "left 1s ease-out 1s",
+          "left 1s ease-out 1.1s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "chees_board_in",
+      "tiles"         : [ 9, 16 ],
+      "columns"       : [ 3, 4 ],
+      "rows"          : [ 3, 4 ],
+      "overflow"      : "hidden",
+      "double"        : false,
+      "back_visible"  : true,
+      "dispose_delay" : [ 1300, 1300 ],
+      
+      "start_pos": [
+        [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "-101%", "101%", "-101%", "101%", "-101%", "101%", "-101%", "101%", "-101%" ],
+        [
+         "0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","-101%","101%","-101%","101%","-101%","101%","-101%","101%","-101%","101%","-101%","101%","-101%","101%","-101%","101%"
+        ]
+      ],
+      "stop_pos": [
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ],
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%" ]
+      ],
+      
+      "transition": [
+        [
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s"
+
+        ],
+        [
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s",
+          "top 1s linear 0s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "tiles_in_out",
+      "tiles"         : [ 9, 16 ],
+      "columns"       : [ 3, 4 ],
+      "rows"          : [ 3, 4 ],
+      "overflow"      : "visible",
+      "double"        : true,
+      "back_visible"  : false,
+      "dispose_delay" : [ 2800, 2800 ],
+      
+      "start_pos": [
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%",
+          "150%","150%","150%","150%","150%","150%","150%","150%","150%","-150%","-150%","-150%","-150%","-150%","-150%","-150%","-150%","-150%"
+        ],
+        [ "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%",
+          "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%",
+          "150%","150%","150%","150%","150%","150%","150%","150%","150%","150%","150%","150%","150%","150%","150%","150%",
+          "-150%","-150%","-150%","-150%","-150%","-150%","-150%","-150%","-150%", "-150%","-150%","-150%","-150%","-150%","-150%","-150%"
+        ]
+      ],
+      "stop_pos": [
+        [ "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%",
+          "-150%","-150%","-150%","-150%","-150%","-150%","-150%","-150%","-150%","0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%"],
+        [ "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%",
+          "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%",
+          "-150%","-150%","-150%","-150%","-150%","-150%","-150%","-150%","-150%", "-150%","-150%","-150%","-150%","-150%","-150%","-150%",
+          "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%", "0%"
+        ]
+      ],
+      
+      "start_opacity": [
+        [1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0],
+        [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      ],
+      "stop_opacity": [
+        [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+        [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+      ],
+      
+      "start_transform": [
+        [
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)"
+        ],
+        [
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)"
+        ]
+      ],
+      "stop_transform": [
+        [ "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)"
+        ],
+        [
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,1,1,180deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)",
+          "rotate3d(0,0,0,0deg)"
+        ]
+      ],
+      
+      "transition": [
+        [
+         "left 2s linear 0s , top 2s linear 0s , transform 2s linear 0s , opacity 2s linear 0s",
+         "left 2s linear 0.4s , top 2s linear 0.4s , transform 2s linear 0.4s , opacity 2s linear 0.4s",
+         "left 2s linear 0.2s , top 2s linear 0.2s , transform 2s linear 0.2s , opacity 2s linear 0.2s",
+         "left 2s linear 0.1s , top 2s linear 0.1s , transform 2s linear 0.1s , opacity 2s linear 0.1s",
+         "left 2s linear 0s , top 2s linear 0s , transform 2s linear 0s , opacity 2s linear 0s",
+         "left 2s linear 0.6s , top 2s linear 0.6s , transform 2s linear 0.6s , opacity 2s linear 0.6s",
+         "left 2s linear 0.3s , top 2s linear 0.3s , transform 2s linear 0.3s , opacity 2s linear 0.3s",
+         "left 2s linear 0.1s , top 2s linear 0.1s , transform 2s linear 0.1s , opacity 2s linear 0.1s",
+         "left 2s linear 0.5s , top 2s linear 0.5s , transform 2s linear 0.5s , opacity 2s linear 0.5s"
+        ],
+        [
+        "left 2s linear 0.3s , top 2s linear 0.3s , transform 2s linear 0.3s , opacity 2s linear 0.3s",
+         "left 2s linear 0.1s , top 2s linear 0.1s , transform 2s linear 0.1s , opacity 2s linear 0.1s",
+         "left 2s linear 0s , top 2s linear 0s , transform 2s linear 0s , opacity 2s linear 0s",
+         "left 2s linear 0.2s , top 2s linear 0.2s , transform 2s linear 0.2s , opacity 2s linear 0.2s",
+         "left 2s linear 0.5s , top 2s linear 0.5s , transform 2s linear 0.5s , opacity 2s linear 0.5s",
+         "left 2s linear 0.4s , top 2s linear 0.4s , transform 2s linear 0.4s , opacity 2s linear 0.4s",
+         "left 2s linear 0.1s , top 2s linear 0.1s , transform 2s linear 0.1s , opacity 2s linear 0.1s",
+         "left 2s linear 0.6s , top 2s linear 0.6s , transform 2s linear 0.6s , opacity 2s linear 0.6s",
+         "left 2s linear 0s , top 2s linear 0s , transform 2s linear 0s , opacity 2s linear 0s",
+         "left 2s linear 0.2s , top 2s linear 0.2s , transform 2s linear 0.2s , opacity 2s linear 0.2s",
+         "left 2s linear 0.5s , top 2s linear 0.5s , transform 2s linear 0.5s , opacity 2s linear 0.5s",
+         "left 2s linear 0.2s , top 2s linear 0.2s , transform 2s linear 0.2s , opacity 2s linear 0.2s",
+         "left 2s linear 0.4s , top 2s linear 0.4s , transform 2s linear 0.4s , opacity 2s linear 0.4s",
+         "left 2s linear 0.1s , top 2s linear 0.1s , transform 2s linear 0.1s , opacity 2s linear 0.1s",
+         "left 2s linear 0s , top 2s linear 0s , transform 2s linear 0s , opacity 2s linear 0s",
+         "left 2s linear 0.6s , top 2s linear 0.6s , transform 2s linear 0.6s , opacity 2s linear 0.6s"
+        ]
+      ]
+    },
+
+    {
+      "name": "patloom_twist",
+      "tiles": [ 5, 10 ],
+      "columns": [ 1, 1 ],
+      "rows": [ 5, 10 ],
+      "overflow": "visible",
+      "double": true,
+      "back_visible": false,
+      "dispose_delay": [ 2500, 4000 ],
+
+      "start_opacity": [
+        [ 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 ],
+        [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+      ],
+      "stop_opacity": [
+        [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ],
+        [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+      ],
+
+      "start_transform": [
+        [
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)"
+        ],
+        [
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)",
+          "rotateZ(180deg)"
+        ]
+      ],
+      "stop_transform": [
+        [
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)"
+        ],
+        [
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(-180deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)"
+        ]
+      ],
+
+      "transition": [
+        [
+          "transform 1s ease-out 0s , opacity 1s ease-out 0s",
+          "transform 1s ease-out 0.3s , opacity 1s ease-out 0.3s",
+          "transform 1s ease-out 0.6s , opacity 1s ease-out 0.6s",
+          "transform 1s ease-out 0.9s , opacity 1s ease-out 0.9s",
+          "transform 1s ease-out 1.2s , opacity 1s ease-out 1.2s"
+        ],
+        [
+          "transform 1s ease-out 0s , opacity 1s ease-out 0s",
+          "transform 1s ease-out 0.3s , opacity 1s ease-out 0.3s",
+          "transform 1s ease-out 0.6s , opacity 1s ease-out 0.6s",
+          "transform 1s ease-out 0.9s , opacity 1s ease-out 0.9s",
+          "transform 1s ease-out 1.2s , opacity 1s ease-out 1.2s",
+          "transform 1s ease-out 1.5s , opacity 1s ease-out 1.5s",
+          "transform 1s ease-out 1.8s , opacity 1s ease-out 1.8s",
+          "transform 1s ease-out 2.1s , opacity 1s ease-out 2.1s",
+          "transform 1s ease-out 2.4s , opacity 1s ease-out 2.4s",
+          "transform 1s ease-out 2.7s , opacity 1s ease-out 2.7s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "commodore_64",
+      "tiles"         : [ 25, 100 ],
+      "columns"       : [ 5, 10 ],
+      "rows"          : [ 5, 10 ],
+      "overflow"      : "visible",
+      "double"        : true,
+      "back_visible"  : false,
+      "dispose_delay" : [ 2100, 2100 ],
+      
+      "start_opacity": [
+        [
+           1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        ],
+        [
+           1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ,
+           1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ,
+           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ,
+           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 
+        ]
+      ],
+      "stop_opacity": [
+         [
+           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+           1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+        ],
+        [
+           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ,
+           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ,
+           1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ,
+           1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 
+        ]
+      ],
+      
+      "transition": [
+        [
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s"
+        ],
+        [
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.4s",
+          "opacity 1s ease-out 0s",
+          "opacity 1s ease-out 0.1s",
+          "opacity 1s ease-out 0.8s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s",
+          "opacity 1s ease-out 0.5s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.6s",
+          "opacity 1s ease-out 0.3s",
+          "opacity 1s ease-out 0.2s"
+        ]
+      ]
+    },
+
+    {
+      "name"          : "double_vortex",
+      "tiles"         : [ 9, 16 ],
+      "columns"       : [ 3, 4 ],
+      "rows"          : [ 3, 4 ],
+      "overflow"      : "visible",
+      "double"        : true,
+      "back_visible"  : false,
+      "dispose_delay" : [ 2300, 2300],
+      
+      "start_size": [
+        [
+          "100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%", 
+          "10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%"
+        ],
+        [
+          "100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%",
+          "100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%", 
+          "10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%",
+          "10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%"
+        ]
+      ],
+      "stop_size": [
+         [
+           "10%","10%","10%","10%","10%","10%","10%","10%","10%","100%","100%","100%","100%","100%","100%","100%","100%","100%",
+           "10%","10%","10%","10%","10%","10%","10%","10%","10%","100%","100%","100%","100%","100%","100%","100%","100%","100%"   
+        ],
+        [
+          "10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%",
+          "100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%",
+          "10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%","10%", 
+          "100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%","100%"
+        ]
+      ],
+
+      "start_pos": [
+        [
+          "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%", 
+          "-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%"
+        ],
+        [
+          "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%",
+          "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%", 
+          "-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%",
+          "-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%"
+        ]
+      ],
+      "stop_pos": [
+         [
+           "-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","0%","0%","0%","0%","0%","0%","0%","0%","0%",
+           "-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+         ],
+        [
+          "-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%",
+           "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%",
+          "-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%","-250%",
+          "0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%","0%"
+        ]
+      ],
+      "start_transform": [
+        [
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)"
+        ],
+        [
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)"
+        ]
+      ],
+      "stop_transform": [
+        [
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)"
+        ],
+        [
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(760deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)",
+          "rotateZ(0deg)"
+        ]
+      ],
+      "start_opacity": [
+        [
+           1, 1, 1, 1, 1, 1, 1, 1, 1,
+           0, 0, 0, 0, 0, 0, 0, 0, 0
+        ],
+        [
+           1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        ]
+      ],
+      "stop_opacity": [
+         [
+           0, 0, 0, 0, 0, 0, 0, 0, 0,
+           1, 1, 1, 1, 1, 1, 1, 1, 1
+        ],
+        [
+           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+           1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+        ]
+      ],
+      
+      "transition": [
+        [
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s"
+        ],
+        [
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s",
+          "opacity 2s ease-out 0s , left 2s ease-out 0s , top 2s ease-out 0s , width 2s ease-out 0s , height 2s ease-out 0s , transform 2s ease-out 0s"
+        ]
+      ]
+    }
+  
+  ]
+
+}
