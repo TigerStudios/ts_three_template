@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GUI } from 'three/examples/jsm/libs/dat.gui.module.js';
-import { JTS as _ } from '../vendor/JTS/jts.service';
+import { JTS, JTS as _ } from '../vendor/JTS/jts.service';
 import vertexShader from './shaders/vertex.glsl';
 import fragmentShader from './shaders/fragment.glsl';
 
@@ -31,7 +31,6 @@ export class Paint{
     constructor(){
 
         this.stage = _('#paint-box');
-
         this.init();
 
     }

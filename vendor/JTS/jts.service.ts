@@ -12868,8 +12868,11 @@ JTS.prototype.zoom = function(zoomSize?: number , configuration?: any) {
 
 JTS.jAnimate = (duration,  draw, options) => {
 
-    const start = performance.now();
+    let start = performance.now();
     const n = options.coefficient || 1;
+    let delay = options.delay || 0;
+    let elapsed = 0;
+    let enabled = false;
     let timing;
 
     switch (options.timing_function){
@@ -12908,41 +12911,64 @@ JTS.jAnimate = (duration,  draw, options) => {
 
     }
 
-    requestAnimationFrame(function animate(time){
+    startAnimation();
 
-        let fraction = (time - start) / duration;
+    function startAnimation(){
 
-        if (fraction > 1){
+        requestAnimationFrame(function animate(time){
 
-            fraction = 1;
+            elapsed = time - start;
 
-        }
+            if(elapsed >= delay && !enabled){
 
-        let progress = timing(fraction, n);
-
-        if (options.reverse){
-
-            progress = 1 - progress;
-
-        }
-
-        draw(progress);
-
-        if (fraction < 1){
-
-            requestAnimationFrame(animate);
-
-        }else{
-
-            if(options.callback){
-
-                options.callback();
+                start = time;
+                enabled = true;
 
             }
 
-        }
+            if(enabled){
 
-    });
+                let fraction = (time - start) / duration;
+
+                if (fraction > 1){
+
+                    fraction = 1;
+
+                }
+
+                let progress = timing(fraction, n);
+
+                if (options.reverse){
+
+                    progress = 1 - progress;
+
+                }
+
+                draw(progress);
+
+                if (fraction < 1){
+
+                    requestAnimationFrame(animate);
+
+                }else{
+
+                    if(options.callback){
+
+                        options.callback();
+
+                    }
+
+                }
+
+            }else{
+
+                requestAnimationFrame(animate);
+
+            }
+
+        });
+
+    }
 
     function linear(fraction){
 
