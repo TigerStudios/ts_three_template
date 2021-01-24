@@ -53,8 +53,19 @@ export class Paint{
         //Gui
         this.setGui();
 
+        //Listeners
+        this.listeners();
+
         this.scene.add(this.mesh);
         this.render();
+
+    }
+
+    listeners(){
+
+        const self = this;
+
+        _(window).bind('resize',() => self.resize());
 
     }
 
@@ -66,10 +77,21 @@ export class Paint{
 
             this.time += Paint.TIME;
             this.increaseValue += Paint.INCREASE_VALUE;
+
             this.material.uniforms.increaseValue.value = this.increaseValue;
+
             requestAnimationFrame(() => this.render());
 
         }
+
+    }
+
+    resize(){
+        
+        this.camera.aspect = window.innerWidth / window.innerHeight;
+        this.camera.updateProjectionMatrix();
+        
+        this.renderer.setSize( window.innerWidth, window.innerHeight );
 
     }
 
@@ -116,6 +138,8 @@ export class Paint{
         });
 
         this.mesh = new THREE.Mesh(this.geometry,this.material);
+        this.mesh.rotation.y = this.toRadians(120);
+        this.mesh.rotation.z = this.toRadians(60);
 
     }
 
@@ -142,9 +166,18 @@ export class Paint{
     setScene(){
 
         this.scene = new THREE.Scene();
+
         this.camera = new THREE.PerspectiveCamera(50,window.innerWidth / window.innerHeight,0.01,10000);
         this.camera.position.set(0,0,100);
-        this.camera.lookAt(0,0,0);
+        this.camera.lookAt(new THREE.Vector3());
+
+    }
+
+
+    //Utilities
+    toRadians(deg: number){
+
+        return deg * (Math.PI / 180);
 
     }
 
