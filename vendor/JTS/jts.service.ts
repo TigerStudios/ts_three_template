@@ -10837,23 +10837,29 @@ JTS.prototype.value = function(val: any) {
                     }
                     else if (node.nodeType === 1 && (node.tagName).toLowerCase() === 'optgroup') {
 
-                        innerParse(0);
-                        function innerParse(subIndex){
-                            if (subIndex < node.childNodes.length){
-                                if (node.childNodes[subIndex].nodeType === 1) {
+                        innerParse(0,node);
 
-                                    options.push(node.childNodes[subIndex]);
-
-                                }
-                                innerParse(subIndex + 1);
-
-                            }
-                        }
                     }
 
                     parseNodes(index + 1);
 
                 }
+
+                function innerParse(subIndex,innerNode){
+
+                    if (subIndex < innerNode.childNodes.length){
+
+                        if (innerNode.childNodes[subIndex].nodeType === 1) {
+
+                            options.push(innerNode.childNodes[subIndex]);
+
+                        }
+
+                        innerParse(subIndex + 1,innerNode);
+
+                    }
+                }
+
             }
 
 
@@ -10878,6 +10884,7 @@ JTS.prototype.value = function(val: any) {
         function getCheckbox() {
 
             const name = JTS(t[0]).attr('name');
+            const array = [];
 
             if (name) {
 
@@ -10885,26 +10892,32 @@ JTS.prototype.value = function(val: any) {
 
                 if (list.length > 1) {
 
-                    const array = [];
-                    parseList(0);
-                    function parseList(index) {
 
-                        if (index < list.length){
-                            const item: any = list[index];
-                            if (item.checked) {
-
-                                array.push(item.value);
-
-                            }
-                            parseList(index + 1);
-                        }
-                    }
+                    parseList(0,list);
 
                     if (array.length > 0) {
 
                         return array;
 
                     }
+
+                }
+
+            }
+
+            function parseList(index,innerList) {
+
+                if (index < innerList.length){
+
+                    const item: any = innerList[index];
+
+                    if (item.checked) {
+
+                        array.push(item.value);
+
+                    }
+
+                    parseList(index + 1,innerList);
 
                 }
 
@@ -10924,22 +10937,27 @@ JTS.prototype.value = function(val: any) {
 
                 if (list.length > 1) {
 
-                    parseList(0);
-                    function parseList(index) {
+                    parseList(0,list);
 
-                        if (index < list.length){
-                            const item: any = list[index];
-                            if (item.checked) {
-
-                                return item.value;
-
-                            }
-                            parseList(index + 1);
-                        }
-                    }
 
                 }
 
+            }
+
+            function parseList(index,innerList) {
+
+                if (index < innerList.length){
+
+                    const item: any = innerList[index];
+
+                    if (item.checked) {
+
+                        return item.value;
+
+                    }
+
+                    parseList(index + 1, innerList);
+                }
             }
 
             return t[0].checked ? t[0].value : false;
@@ -11004,32 +11022,8 @@ JTS.prototype.value = function(val: any) {
             if (tag === 'select') {
 
                 options = [];
-
                 pushOptions(0);
-                function pushOptions(i){
-                    if (i < element.childNodes.length){
-                        const node = element.childNodes[i];
-                        if (node.nodeType === 1 && (node.tagName).toLowerCase() === 'option') {
 
-                            options.push(node);
-
-                        }else if (node.nodeType === 1 && (node.tagName).toLowerCase() === 'optgroup') {
-
-                            pushInnerOption(0);
-                            function pushInnerOption(iG) {
-                                if (iG < node.childNodes.length){
-                                    if (node.childNodes[iG].nodeType === 1) {
-
-                                        options.push(node.childNodes[iG]);
-
-                                    }
-                                    pushInnerOption(iG + 1);
-                                }
-                            }
-                        }
-                        pushOptions(i + 1);
-                    }
-                }
             }
             else if (tag === 'optgroup') {
 
@@ -11042,26 +11036,46 @@ JTS.prototype.value = function(val: any) {
 
             }
 
-            if (constructor.match(/Array/)) {
+            function pushOptions(i){
 
-                parseOption(0);
-                function parseOption(i){
-                    if (i < options.length){
-                        JTS(options[i]).attr('selected', false);
-                        for (const v of val) {
+                if (i < element.childNodes.length){
 
-                            if (options[i].value === String(v)) {
+                    const node = element.childNodes[i];
 
-                                JTS(options[i]).attr('selected', true);
+                    if (node.nodeType === 1 && (node.tagName).toLowerCase() === 'option') {
 
-                                break;
+                        options.push(node);
 
-                            }
+                    }else if (node.nodeType === 1 && (node.tagName).toLowerCase() === 'optgroup') {
+
+                        pushInnerOption(0 , node);
+
+                    }
+
+                    pushOptions(i + 1);
+                }
+
+                function pushInnerOption(iG , innerNode) {
+
+                    if (iG < innerNode.childNodes.length){
+
+                        if (innerNode.childNodes[iG].nodeType === 1) {
+
+                            options.push(innerNode.childNodes[iG]);
 
                         }
-                        parseOption(i + 1);
+
+                        pushInnerOption(iG + 1 , innerNode);
+
                     }
+
                 }
+
+            }
+
+            if (constructor.match(/Array/)) {
+
+                parseOption(0,options);
 
             }
             else {
@@ -11077,6 +11091,30 @@ JTS.prototype.value = function(val: any) {
                     }
 
                 }
+
+            }
+
+        }
+
+        function parseOption(i,innerOptions){
+
+            if (i < innerOptions.length){
+
+                JTS(innerOptions[i]).attr('selected', false);
+
+                for (const v of val) {
+
+                    if (innerOptions[i].value === String(v)) {
+
+                        JTS(innerOptions[i]).attr('selected', true);
+
+                        break;
+
+                    }
+
+                }
+
+                parseOption(i + 1, innerOptions);
 
             }
 
@@ -11909,6 +11947,7 @@ JTS.prototype.wrap = function(element , single?) {
             JTS(parent).before(wrapper);
 
         }
+
     });
 
     function findChildren(node) {
@@ -11918,18 +11957,26 @@ JTS.prototype.wrap = function(element , single?) {
         if (node.childNodes.length !== 0) {
 
             parseNode(0);
-            function parseNode(index){
-                if (index < node.childNodes.length){
-                    if (node.childNodes[index].nodeType !== 3) {
 
-                        flag = true;
-                        node = node.childNodes[index];
+        }
 
-                    }else{
-                        parseNode(index + 1);
-                    }
+        function parseNode(index){
+
+            if (index < node.childNodes.length){
+
+                if (node.childNodes[index].nodeType !== 3) {
+
+                    flag = true;
+                    node = node.childNodes[index];
+
+                }else{
+
+                    parseNode(index + 1);
+
                 }
+
             }
+
         }
 
         if (flag) {
