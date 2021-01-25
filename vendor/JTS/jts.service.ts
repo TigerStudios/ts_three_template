@@ -12873,6 +12873,7 @@ JTS.jAnimate = (duration,  draw, options) => {
     let delay = options.delay || 0;
     let elapsed = 0;
     let enabled = false;
+    let paused = false;
     let timing;
 
     switch (options.timing_function){
@@ -12911,13 +12912,27 @@ JTS.jAnimate = (duration,  draw, options) => {
 
     }
 
+    let target = JTS(`<div class="jAnimate_target"></div>`);
+
+    target.on(JTS.built_in_events.jANIMATE_PAUSE,() => paused = true);
+    target.on(JTS.built_in_events.jANIMATE_RESUME,() => {
+
+        start = performance.now() - elapsed;
+        paused = false;
+
+    });
+
     startAnimation();
 
     function startAnimation(){
 
         requestAnimationFrame(function animate(time){
 
-            elapsed = time - start;
+            if(!paused){
+
+                elapsed = time - start;
+
+            }
 
             if(elapsed >= delay && !enabled){
 
@@ -12926,7 +12941,7 @@ JTS.jAnimate = (duration,  draw, options) => {
 
             }
 
-            if(enabled){
+            if(enabled && !paused){
 
                 let fraction = (time - start) / duration;
 
@@ -12951,6 +12966,9 @@ JTS.jAnimate = (duration,  draw, options) => {
                     requestAnimationFrame(animate);
 
                 }else{
+
+                    target.off(JTS.built_in_events.jANIMATE_PAUSE);
+                    target.off(JTS.built_in_events.jANIMATE_RESUME);
 
                     if(options.callback){
 
@@ -13658,6 +13676,8 @@ JTS.boolean = {
 };
 
 JTS.built_in_events = {
+    jANIMATE_PAUSE : 'jAnimate_pause',
+    jANIMATE_RESUME : 'jAnimate_resume',
     jCOLOR_PICKER_UPDATED : 'jColor_picker_updated',
     jCROPPER_DONE : 'jCropper_done',
     jCROPPER_ONLY_CLOSED : 'jCropper_only_closed',
