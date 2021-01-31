@@ -1,4 +1,5 @@
 uniform float time;
+uniform float increaseValue;
 varying  vec2 vUv;
 
 void main(){

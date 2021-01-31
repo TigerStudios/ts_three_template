@@ -175,7 +175,7 @@ export class Paint{
 
 
     //Utilities
-    toRadians(deg: number){
+    static toRadians(deg: number){
 
         return deg * (Math.PI / 180);
 
